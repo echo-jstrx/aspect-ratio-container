@@ -1,0 +1,27 @@
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 1280px; /* Max width of 720p resolution */
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+        overflow: hidden;
+    }
+    
+    .video-container video,
+    .video-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the video or image covers the entire container */
+    }
+</style>
+<div class="video-container">
+    <!-- Example for video -->
+    <video src="path/to/your/video.mp4" controls autoplay loop muted></video>
+    
+    <!-- Example for image -->
+    <!-- <img src="path/to/your/image.jpg" alt="Image Description"> -->
+</div>
